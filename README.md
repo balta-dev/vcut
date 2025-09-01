@@ -16,6 +16,6 @@ sudo mv vcut /usr/bin
 ```
 
 ## Ready! Usage examples:
-* vcut "filename.mp4" 5:23 5:42
-* vcut "filename.mkv" 12 15:32
+* vcut 5:23 5:42 "filename.mp4"
+* vcut 12 15:32 "filename.mkv"
 
