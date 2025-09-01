@@ -77,14 +77,14 @@ var
 begin
   if ParamCount < 3 then
   begin
-    Writeln('Uso: ', ExtractFileName(ParamStr(0)), ' <archivo> <inicio mm:ss|hh:mm:ss> <fin mm:ss|hh:mm:ss>');
-    Writeln('Ejemplo: ', ExtractFileName(ParamStr(0)), ' "video.mp4" 1:30 1:35');
+    Writeln('Uso: ', ExtractFileName(ParamStr(0)), ' <inicio mm:ss|hh:mm:ss> <fin mm:ss|hh:mm:ss> <archivo>');
+    Writeln('Ejemplo: ', ExtractFileName(ParamStr(0)), ' 1:30 1:35 "video.mp4"');
     Halt(1);
   end;
 
-  FileName := ParamStr(1);
-  StartStr := ParamStr(2);
-  EndStr := ParamStr(3);
+  FileName := ParamStr(3);
+  StartStr := ParamStr(1);
+  EndStr := ParamStr(2);
 
   // convertir tiempos
   resolveParam(StartStr, StartSec);
