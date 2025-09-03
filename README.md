@@ -4,7 +4,7 @@ VCut is a lightweight command-line tool to quickly cut video fragments.
 * Supports any video format
 * You can mix formats (for example, 12 3:12, means from the second 12 to 3 minutes and 12 seconds)
 * EXTREMELY FAST
-* very easy to use
+* Very easy to use
 
 # REQUIREMENTS
 * [FFMPEG](https://ffmpeg.org/download.html)
